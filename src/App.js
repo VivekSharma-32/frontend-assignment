@@ -1,11 +1,13 @@
 import { Route, Routes } from "react-router-dom";
-import CatCard from "./components/CatCard/CatCard";
+import Header from "./components/Header/Header";
+import Cats from "./components/Cats";
 
 function App() {
   return (
     <>
+      <Header />
       <Routes>
-        <Route path="/" element={<CatCard />} />
+        <Route path="/" element={<Cats />} />
       </Routes>
     </>
   );
